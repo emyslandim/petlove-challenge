@@ -1,0 +1,15 @@
+.button-search {
+    font-size: 1rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    height: 3.4rem;
+    margin-left: 0.5rem;
+    background-color: #f24783;
+    border-radius: 0rem;
+}
+
+.button-search:hover {
+    background-color: #f46899;
+}

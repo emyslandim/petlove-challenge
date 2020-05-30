@@ -1,0 +1,27 @@
+@media (max-width: 345px) {
+    .button-search {
+        margin-top: 1rem;
+        margin-left: 0rem !important;
+        width: 100% !important;
+    }
+    .box-info {
+        width: 20.8rem !important;
+    }
+}
+
+@media (min-width: 345px) and (max-width: 460px) {
+    .input-cep {
+        width: 8rem;
+    }
+    .box-info {
+        width: 21.5rem !important;
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}

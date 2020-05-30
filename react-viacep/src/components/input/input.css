@@ -1,0 +1,13 @@
+.input-cep {
+    color: #555555;
+    font-size: 1.1rem;
+    display: inline;
+    background: transparent;
+    min-height: 3.5rem;
+    border: 0.1rem solid #e6e6e6;
+    padding: 0 0.5rem;
+}
+
+.input-cep:hover {
+    border: 0.08rem solid #f46899;
+}
