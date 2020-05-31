@@ -29,7 +29,7 @@ const Cep = () => {
     return (
         <div className="container">
             <Box className={"box"}>
-            <Input className={"input-cep"} type={"text"} mask={"99999-999"} placeholder={"Digite o CEP"} value={cep} message={"Digite um cep válido"} onChange={e => { setCep(e.target.value) }} />
+            <Input className={"input-cep"} type={"text"} mask={"99999-999"} placeholder={"Digite o CEP"} value={cep} message={"Digite um cep válido"} onChange={e => { setCep(e.target.value) }} onKeyPress={{key: "Enter", function: SearchCep}} />
                 <Button className={"button-search"} onClick={SearchCep}>Buscar cep</Button>
             </Box>
             {
