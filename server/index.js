@@ -8,8 +8,11 @@ const port = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/cep', routes)
-app.listen(port, () => {
-    console.log(`Server running: port ${port}`);
-});
+
+if (process.env.NODE_ENV !== "test") {
+    app.listen(port, () => {
+        console.log(`Server running: port ${port}`);
+    });
+}
 
 export default app;
