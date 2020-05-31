@@ -22,7 +22,7 @@ describe("Testing interface of the page", () => {
         expect(response).toBe("CEP: ")
     }, timeout);
 
-    test("Should get a error because of the lenth of the cep", async() => {
+    test("Should get an error because of the cep length", async() => {
         await page.evaluate(() => document.querySelector(".input-cep").value = "")
         await page.type('.input-cep', '03210')
         await page.click('.button-search')
@@ -31,7 +31,7 @@ describe("Testing interface of the page", () => {
         expect(response).toBe("Digite um CEP válido!")
     }, timeout);
 
-    test("Should get a error because the cep does not exist", async() => {
+    test("Should get an error because the cep does not exist", async() => {
         await page.evaluate(() => document.querySelector(".input-cep").value = "")
         await page.type('.input-cep', '03210002')
         await page.click('.button-search')
